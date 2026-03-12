@@ -1,18 +1,11 @@
-<<<<<<< HEAD
-# SymBoltz Implementation of Dark Energy–Dark Matter Momentum Transfer
-=======
+
 # SymBoltz Implementation of Pure Momentum Transfer in the Dark Sector
->>>>>>> 8150ede (Replace repository with unified pure momentum SymBoltz implementation)
 
 Author: **David Figueruelo**
 
 This repository contains an **implementation in SymBoltz** of a **momentum transfer interaction between Dark Energy (DE) and Dark Matter (DM)** at the level of cosmological perturbations.
 
-<<<<<<< HEAD
 The model implemented in this code corresponds to the same physical model implemented in the modified CLASS code available at:
-=======
-The code includes three possible momentum transfer interaction channels:
->>>>>>> 8150ede (Replace repository with unified pure momentum SymBoltz implementation)
 
 https://github.com/david-figuer/CLASS_momentum_transfer
 
@@ -20,21 +13,15 @@ The goal of this repository is to reproduce the same cosmological predictions us
 
 The SymBoltz implementation has been **explicitly validated against the CLASS implementation**, showing **sub-percent level agreement** in both the matter power spectrum and the CMB angular power spectra.
 
-<<<<<<< HEAD
 The physical model implemented in this repository is based on peer-reviewed publications and a doctoral thesis developed by the author of this repository (**David Figueruelo**) in collaboration with Jose Beltrán Jiménez, Dario Bettoni, and Florencia A. Teppa Pannia.
-=======
-- the **matter power spectrum** \(P(k)\)
-- the **CMB angular power spectra** (for example **TT**, **EE**, and **TE**)
+
 
 The implementation is based on the same physical momentum-transfer framework developed in the literature cited below, extended here to a unified SymBoltz implementation of the full **pure momentum** model.
->>>>>>> 8150ede (Replace repository with unified pure momentum SymBoltz implementation)
 
 **Any scientific use of this code requires citation of the first reference listed in the Citations section below.**
 
 ---
 
-<<<<<<< HEAD
-=======
 # Running the Code
 
 Run Julia with multithreading enabled:
@@ -49,23 +36,9 @@ Then execute
 include("pure_momentum_symboltz.jl")
 ```
 
-# What to touch in the code and how to use it?
-
-Only change **USER CONFIG** of the .jl file. There you can choose the values of the coupling parameter for each pure momentum transfer, the value of the other cosmological parameters and where to place the output. In particular:
-- **coupling_sets**            -> choose the value of   α , β and γ
-- **run_mode**                 -> choose if you want the matter power spectrum (:pk) or the cosmic microwave background (:cmb), or both (:both)
-- **cmb_modes**                -> choose which CMB spectra you want (:TT, :EE, :TE)
-- **Cosmology params**         -> choose the value of the common cosmological parameters
-- **P(k) grid and CMB grid**   -> choose k and l grid for :pk and/or :cmb
-
-**Other sections of the code contain the cosmological model implementation and should not be modified unless necessary. Change at your own risk.**
-
----
-
----
 
 
->>>>>>> 8150ede (Replace repository with unified pure momentum SymBoltz implementation)
+
 # Related Codes
 
 The same DE–DM momentum transfer model has been implemented in other Boltzmann solvers.
@@ -103,15 +76,7 @@ The repository contains two main Julia scripts.
 
 Computes the **matter power spectrum P(k)** using SymBoltz for different values of the coupling parameter α.
 
-<<<<<<< HEAD
 ### model_momentum_CMB.jl
-=======
-- **matter power spectrum \(P(k)\)**
-- **CMB angular power spectra**
-  - **TT**
-  - **EE**
-  - **TE**
->>>>>>> 8150ede (Replace repository with unified pure momentum SymBoltz implementation)
 
 Computes the **CMB angular power spectra**
 
@@ -119,15 +84,13 @@ Computes the **CMB angular power spectra**
 - TE
 - EE
 
-<<<<<<< HEAD
 Both scripts implement the αCDM model with momentum transfer between Dark Energy and Dark Matter.
-=======
+
 The code is designed so that the user can easily run:
 
 - a single cosmology
 - several coupling configurations
 - one or several observables in a single execution
->>>>>>> 8150ede (Replace repository with unified pure momentum SymBoltz implementation)
 
 ---
 
@@ -155,54 +118,24 @@ The interaction strength is controlled by the coupling parameter
 α
 ```
 
-<<<<<<< HEAD
 which determines the magnitude of the momentum transfer between Dark Energy and Dark Matter.
-=======
-Γβ (θ_DE − θ_B)
-
-in the Baryons velocity equation, and a corresponding term in the Dark Energy velocity equation
-
-Γβ Rβ (θ_DE − θ_B)
-
-where the coupling rate Γβ is proportional to the parameter **β**.
-
-
----
-
-## 3. Dark Matter – Baryons
-
-This code implements an **elastic scattering (momentum transfer) interaction between Dark Matter and Baryons**, modifying the **velocity (θ) equations** of DM and B at the level of **linear cosmological perturbations**.
-
-The interaction modifies the perturbation equations through terms of the form
-
-Γγ (θ_B − θ_DM)
-
-in the Baryons velocity equation, and a corresponding term in the Dark Matter velocity equation
-
-Γγ Rγ (θ_B − θ_DM)
-
-where the coupling rate Γγ is proportional to the parameter **γ**.
-
 
 
 ---
 
 # Model Parameters
 
-The interaction strengths are controlled by the coupling parameters
+The interaction strength is controlled by the coupling parameter
 
 
-α, β, γ
+α
 
 
 where:
 
 - **α** controls momentum transfer between **Dark Energy and Dark Matter**
-- **β** controls momentum transfer between **Dark Energy and Baryons**
-- **γ** controls momentum transfer between **Dark Matter and Baryons**
 
-These parameters can be set independently.
->>>>>>> 8150ede (Replace repository with unified pure momentum SymBoltz implementation)
+
 
 ---
 
