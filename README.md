@@ -64,21 +64,6 @@ Depending on the script configuration, the user can easily run:
 
 ## Physics / Model Details
 
-### Dark Matter – Baryons
-
-This code implements an **elastic scattering (momentum transfer) interaction between Dark Matter and Baryons**, modifying the **velocity ($\\theta$) equations** of DM and Baryons at the level of **linear cosmological perturbations**.
-
-The interaction modifies the perturbation equations through terms of the form:
-
-$$\Gamma_\gamma (\theta_\mathrm{B} - \theta_\mathrm{DM})$$
-
-in the Baryons velocity equation, and a corresponding term:
-
-$$\Gamma_\gamma R_\gamma (\theta_\mathrm{B} - \theta_\mathrm{DM})$$
-
-in the Dark Matter velocity equation, where the coupling rate $\Gamma_\gamma$ is proportional to the parameter **$\gamma$**.
-
----
 
 ## Model Parameters
 
