@@ -83,7 +83,7 @@ The SymBoltz implementation has been directly compared with the CLASS implementa
 
 The resulting cosmological observables agree at the **sub-percent level**, confirming the correctness of the symbolic implementation.
 
-![Pk comparison between CLASS and SymBoltz](plots/Pk_CLASS_vs_SymBoltz_modelo.png)
+![Pk comparison between CLASS and SymBoltz](plots/Pk_SymBoltz_all.png)
 
 ---
 
